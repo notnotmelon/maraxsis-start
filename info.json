@@ -1,19 +1,22 @@
 {
-  "name": "[internal-mod-name]",
+  "name": "maraxsis-start",
   "version": "0.0.0",
-  "title": "[MOD DISPLAY NAME]",
-  "author": "[YOUR MODS.FACTORIO.COM USERNAME]",
-  "homepage": "[HOMEPAGE/REPO URL]",
-  "description": "[SHORT DESCRIPTION]",
+  "title": "Maraxsis Start",
+  "author": "notnotmelon",
+  "homepage": "https://github.com/notnotmelon/maraxsis-start",
+  "description": "Start on the drowned world: Maraxsis! What could go wrong?",
   "factorio_version": "2.0",
   "dependencies": [
-    "base"
+    "base >= 2.0.28",
+    "space-age",
+    "maraxsis >= 1.25.5",
+    "! any-planet-start"
   ],
-  "quality_required": false,
-  "rail_bridges_required": false,
-  "space_travel_required": false,
-  "spoiling_required": false,
-  "freezing_required": false,
-  "segmented_units_required": false,
-  "expansion_shaders_required": false
+  "quality_required": true,
+  "rail_bridges_required": true,
+  "space_travel_required": true,
+  "spoiling_required": true,
+  "freezing_required": true,
+  "segmented_units_required": true,
+  "expansion_shaders_required": true
 }
