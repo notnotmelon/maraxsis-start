@@ -1,8 +1,7 @@
 local function fix_non_collideable_cliffs(surface)
+    if game.tick ~= 0 then return end
     if storage.cliffs_fixed then return end
     storage.cliffs_fixed = true
-
-    assert(game.tick == 0)
 
     local cliffs = surface.find_entities_filtered {type = "cliff", name = "cliff-maraxsis-collisionless"}
     for _, cliff in pairs(cliffs) do
