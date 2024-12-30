@@ -9,7 +9,7 @@
   "dependencies": [
     "base >= 2.0.28",
     "space-age",
-    "maraxsis >= 1.25.5",
+    "maraxsis >= 1.25.8",
     "any-planet-start"
   ],
   "quality_required": true,
