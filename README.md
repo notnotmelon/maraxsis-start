@@ -18,7 +18,14 @@ The only edited recipes are:
 
 ---
 
-## Special thanks
+## Special Thanks
 
 [CodeGreen](https://mods.factorio.com/user/_CodeGreen) for providing the wonderful [Any Planet Start](https://mods.factorio.com/mod/any-planet-start) which this mod uses as a library.
 [FishBus](https://mods.factorio.com/user/fishbus) for providing amazing open-source graphics for A Breath Of Fresh Air. Sourced from [Factorio+](https://mods.factorio.com/mod/factorioplus). Go play it!
+
+---
+
+## Translation
+
+Want to help translate this mod?
+Visit our [Crowdin](https://crowdin.com/project/factorio-mods-localization) page.
