@@ -10,7 +10,7 @@ utils.set_prerequisites("uranium-processing", {"hydraulic-science-pack"})
 utils.set_prerequisites("solar-energy", {"electronics"})
 utils.set_prerequisites("automation-science-pack", {"solar-energy"})
 utils.set_prerequisites("maraxsis-wyrm-confinement", {"steam-power", "maraxsis-piscary", "ducts"})
-utils.set_prerequisites("steam-power", {"maraxsis-glassworking", "maraxsis-hydro-plant"})
+utils.set_prerequisites("steam-power", {"concrete"})
 utils.set_prerequisites("sp-spidertron-automation", {"processing-unit", "tungsten-steel", "electric-engine", "bulk-inserter", "fluid-handling"})
 utils.set_prerequisites("ducts", {"tungsten-steel", "fluid-handling"})
 utils.set_prerequisites("plastics", {"electronics", "military"})
@@ -38,7 +38,7 @@ utils.set_prerequisites("maraxsis-deepsea-research", {"military-science-pack", "
 utils.set_prerequisites("maraxsis-sonar", {"radar"})
 utils.set_prerequisites("radar", {"hydraulic-science-pack"})
 utils.set_prerequisites("maraxsis-super-sealant-substance-productivity", {"hydraulic-science-pack", "utility-science-pack"})
-utils.set_prerequisites("concrete", {"maraxsis-hydro-plant"})
+utils.set_prerequisites("concrete", {"lubricant"})
 utils.set_prerequisites("lubricant", {"maraxsis-hydro-plant"})
 utils.set_prerequisites("electric-engine", {"engine", "lubricant"})
 utils.set_prerequisites("automation-science-pack", {"concrete", "lubricant"})
@@ -215,3 +215,4 @@ end
 
 data.raw.recipe["maraxsis-pressure-dome"].category = "maraxsis-hydro-plant-or-assembling"
 data.raw.recipe["biolubricant"].category = "maraxsis-hydro-plant-or-biochamber"
+data.raw.recipe["refined-concrete"].category = "pressing"
