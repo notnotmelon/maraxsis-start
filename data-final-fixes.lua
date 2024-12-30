@@ -6,3 +6,5 @@ a_breath_of_fresh_air.collision_mask.layers[maraxsis_dome_collision_mask] = nil
 local utils = require("__any-planet-start__.utils")
 
 utils.set_prerequisites("sp-spidertron-automation", {"processing-unit", "tungsten-steel", "electric-engine", "bulk-inserter", "fluid-handling"})
+utils.add_recipes("sp-spidertron-automation", {"maraxsis-diesel-submarine"})
+utils.set_packs("sp-spidertron-automation", {"automation-science-pack", "logistic-science-pack"}, 100, 30)
