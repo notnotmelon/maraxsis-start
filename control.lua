@@ -46,7 +46,7 @@ script.on_init(function()
     remote.call("freeplay", "set_created_items", {})
     remote.call("freeplay", "set_ship_items", {
         ["maraxsis-a-breath-of-fresh-air"] = 1,
-        ["foundry"] = 3,
+        ["foundry"] = 5,
         ["medium-electric-pole"] = 20,
     })
     remote.call("freeplay", "set_debris_items", {
