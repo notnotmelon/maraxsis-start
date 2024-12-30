@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.2
+Date: 2024-12-30
+  Balancing:
+    - A breath of fresh air now generates 3MW instead of 2MW.
+    - You now start with 3 foundries instead of 1.
+---------------------------------------------------------------------------------------------------
 Version: 1.1.1
 Date: 2024-12-30
   Bugfixes:
