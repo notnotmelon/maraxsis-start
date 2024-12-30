@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.3
+Date: 2024-12-30
+  Bugfixes:
+    - Fixed crash. Resolves https://github.com/notnotmelon/maraxsis/issues/191
+    - Fixed wrong tech dependancies for plastics and military 2. Fixed wrong tech trigger for submarine automation.
+---------------------------------------------------------------------------------------------------
 Version: 1.1.2
 Date: 2024-12-30
   Balancing:
