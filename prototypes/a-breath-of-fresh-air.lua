@@ -163,6 +163,8 @@ data:extend {{
     minable = nil,
     hidden = true,
     factoriopedia_alternative = "maraxsis-a-breath-of-fresh-air",
+    localised_name = {"entity-name.maraxsis-a-breath-of-fresh-air"},
+    localised_description = {"entity-description.maraxsis-a-breath-of-fresh-air"},
     max_health = 100,
     energy_source = {
         type = "electric",
