@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.7
+Date: 2024-12-31
+  Balancing:
+    - Deepsea research no longer requires yellow, purple, or military science to research.
+---------------------------------------------------------------------------------------------------
 Version: 1.1.6
 Date: 2024-12-31
   Balancing:
