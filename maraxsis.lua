@@ -36,7 +36,6 @@ utils.set_prerequisites("production-science-pack", {"productivity-module", "adva
 utils.set_prerequisites("maraxsis-deepsea-research", {"chemical-science-pack", "hydraulic-science-pack"})
 utils.set_prerequisites("maraxsis-sonar", {"radar"})
 utils.set_prerequisites("radar", {"hydraulic-science-pack"})
-utils.set_prerequisites("maraxsis-super-sealant-substance-productivity", {"hydraulic-science-pack", "utility-science-pack"})
 utils.set_prerequisites("concrete", {"lubricant"})
 utils.set_prerequisites("lubricant", {"maraxsis-hydro-plant"})
 utils.set_prerequisites("electric-engine", {"engine", "lubricant"})
