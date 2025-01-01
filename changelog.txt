@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.8
+Date: 2025-01-01
+  Balancing:
+    - A breath of fresh air now accepts speed modules.
+  Locale:
+    - Fixed unknown key for the breath of fresh air.
+---------------------------------------------------------------------------------------------------
 Version: 1.1.7
 Date: 2024-12-31
   Balancing:
