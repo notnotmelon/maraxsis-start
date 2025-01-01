@@ -141,7 +141,13 @@ data:extend {{
     heating_energy = "50kW",
     collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-    module_slots = 0,
+    module_slots = 2,
+    allowed_effects = {"speed"},
+    effect_receiver = {
+        uses_beacon_effects = false,
+        uses_module_effects = true,
+        uses_surface_effects = true,
+    },
     created_effect = {
         type = "direct",
         action_delivery = {
