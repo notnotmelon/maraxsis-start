@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.9
+Date: 2025-01-01
+  Balancing:
+    - Moved cliff explosives from vulcanus to maraxsis.
+  Changes:
+    - Adjusted technology dependancies for super sealant substance productivity.
+---------------------------------------------------------------------------------------------------
 Version: 1.1.8
 Date: 2025-01-01
   Balancing:
