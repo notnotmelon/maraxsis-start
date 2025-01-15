@@ -133,9 +133,9 @@ local production_science = {"automation-science-pack", "logistic-science-pack", 
 local production_space_science = {"automation-science-pack", "logistic-science-pack", "chemical-science-pack", "space-science-pack", "production-science-pack"}
 local military_space_science = {"automation-science-pack", "logistic-science-pack", "military-science-pack", "chemical-science-pack", "space-science-pack"}
 
-utils.set_packs("maraxsis-salt-reactor", hydraulic_science, 500, 30)
-utils.set_packs("uranium-processing", hydraulic_science, 500, 30)
-utils.set_packs("hydraulic-science-pack", chemical_science, 500, 30)
+utils.set_packs("maraxsis-salt-reactor", hydraulic_science, 100, 30)
+utils.set_packs("uranium-processing", hydraulic_science, 100, 30)
+utils.set_packs("hydraulic-science-pack", chemical_science, 100, 30)
 utils.set_packs("maraxsis-piscary", logistic_science, 100, 30)
 utils.set_packs("coal-liquefaction", logistic_science, 100, 30)
 utils.set_packs("oil-gathering", space_science, 100, 30)
