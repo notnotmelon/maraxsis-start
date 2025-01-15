@@ -62,6 +62,7 @@ data:extend {{
     fixed_recipe = "maraxsis-a-breath-of-fresh-air",
     icon = "__maraxsis-start__/graphics/icons/a-breath-of-fresh-air.png",
     icon_size = 64,
+    maraxsis_buildability_rules = {water = true, dome = true, coral = true, trench = true, trench_entrance = false, trench_lava = false},
     flags = {"placeable-neutral", "player-creation"},
     show_recipe_icon = false,
     minable = {mining_time = 0.4, result = "maraxsis-a-breath-of-fresh-air"},
