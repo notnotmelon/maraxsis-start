@@ -26,7 +26,7 @@ data:extend {{
     results = {{
         type = "fluid",
         name = "maraxsis-atmosphere",
-        amount = 20,
+        amount = 60,
         temperature = 25
     }},
     category = "maraxsis-a-breath-of-fresh-air",
