@@ -27,7 +27,7 @@ local function create_inital_submarine(surface)
     }
 
     local fuel_inventory = submarine.get_inventory(defines.inventory.fuel)
-    fuel_inventory.insert {name = "maraxsis-hydrogen-barrel", count = 80}
+    fuel_inventory.insert {name = "hydrogen-barrel", count = 80}
 end
 
 script.on_event(defines.events.on_player_created, function(event)
