@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.14
+Date: 2025-04-22
+  Bugfixes:
+    - Fixed crash when making a new save. Resolves https://github.com/notnotmelon/maraxsis/issues/275
+---------------------------------------------------------------------------------------------------
 Version: 1.1.13
 Date: 2025-03-31
   Compatibility:
