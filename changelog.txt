@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.15
+Date: 2025-04-22
+  Bugfixes:
+    - Fixed duplicate water shaders on starting new save.
+    - Fixed wrong tech prereqs for the salt reactor.
+---------------------------------------------------------------------------------------------------
 Version: 1.1.14
 Date: 2025-04-22
   Bugfixes:
