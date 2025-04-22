@@ -16,6 +16,18 @@ local function fix_non_collideable_cliffs(surface)
     end
 end
 
+local function fix_duplicate_water_shaders(surface)
+    if game.tick ~= 0 then return end
+    if storage.water_shaders_fixed then return end
+    storage.water_shaders_fixed = true
+
+    local shaders = surface.find_entities_filtered {type = "simple-entity", name = "maraxsis-water-shader"}
+    for _, shader in pairs(shaders) do
+        local position = shader.position
+        shader.destroy()
+    end
+end
+
 local function create_inital_submarine(surface)
     storage.submarine_x = (storage.submarine_x or 6) + 4
 
@@ -37,6 +49,7 @@ script.on_event(defines.events.on_player_created, function(event)
     if surface.name ~= "maraxsis" then return end
     create_inital_submarine(surface)
     fix_non_collideable_cliffs(surface)
+    fix_duplicate_water_shaders(surface)
     pcall(player.exit_cutscene)
     player.insert {name = "light-armor"}
 end)
