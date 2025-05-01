@@ -22,14 +22,12 @@ utils.set_prerequisites("coal-liquefaction", {"maraxsis-piscary"})
 utils.set_prerequisites("oil-gathering", {"space-science-pack"})
 utils.set_prerequisites("planet-discovery-nauvis", {"oil-gathering", "space-platform-thruster"})
 utils.set_prerequisites("planet-discovery-vulcanus", {"oil-gathering", "space-platform-thruster"})
+utils.set_prerequisites("oil-processing", {"planet-discovery-nauvis", "oil-gathering"})
 utils.set_prerequisites("advanced-oil-processing", {"oil-processing", "production-science-pack"})
 utils.set_prerequisites("rocket-silo", {"processing-unit", "logistic-robotics", "advanced-material-processing-2", "maraxsis-project-seadragon"})
 utils.set_prerequisites("lubricant", {"coal-liquefaction"})
 utils.set_prerequisites("hydraulic-science-pack", {"maraxsis-wyrm-confinement", "chemical-science-pack"})
-utils.set_prerequisites("automobilism", {"space-science-pack"})
-utils.set_prerequisites("nuclear-power", {"kovarex-enrichment-process"})
 utils.set_prerequisites("fission-reactor-equipment", {"maraxsis-salt-reactor", "power-armor", "utility-science-pack", "military-science-pack"})
-utils.set_prerequisites("oil-processing", {"planet-discovery-nauvis", "oil-gathering"})
 utils.set_prerequisites("rocket-fuel", {"oil-processing"})
 utils.set_prerequisites("railway", {"elevated-rail", "engine", "logistics-2"})
 utils.set_prerequisites("production-science-pack", {"productivity-module", "advanced-material-processing-2"})
@@ -43,6 +41,14 @@ utils.set_prerequisites("automation-science-pack", {"concrete", "lubricant"})
 utils.set_prerequisites("explosives", {"maraxsis-wyrm-confinement", "coal-liquefaction"})
 utils.set_prerequisites("military-2", {"coal-liquefaction", "military", "logistic-science-pack"})
 utils.set_prerequisites("cliff-explosives", {"military-2", "explosives", "fluid-handling"})
+
+if not mods["planet-muluna"] then 
+    utils.set_prerequisites("automobilism", {"space-science-pack"})
+    utils.set_prerequisites("nuclear-power", {"kovarex-enrichment-process"})
+else
+    utils.set_prerequisites("wood-gas-processing", {"muluna-greenhouses"})
+end
+
 
 utils.add_recipes("uranium-processing", {"maraxsis-stone-centrifuging", "uranium-fuel-cell"})
 utils.add_recipes("planet-discovery-nauvis", {"burner-mining-drill"})
@@ -130,6 +136,12 @@ local chemical_science = {"automation-science-pack", "logistic-science-pack", "c
 local hydraulic_science = {"automation-science-pack", "logistic-science-pack", "chemical-science-pack", "hydraulic-science-pack"}
 local hydraulic_space_science = {"automation-science-pack", "logistic-science-pack", "chemical-science-pack", "hydraulic-science-pack", "space-science-pack"}
 local space_science = {"automation-science-pack", "logistic-science-pack", "chemical-science-pack", "space-science-pack"}
+local space_science_or_before_muluna = {"automation-science-pack", "logistic-science-pack", "chemical-science-pack", "space-science-pack"}
+
+if mods["planet-muluna"] then
+    space_science_or_before_muluna = {"automation-science-pack", "logistic-science-pack", "chemical-science-pack","hydraulic-science-pack"} --Technologies intended to exist when starting a Muluna base.
+end
+
 local production_science = {"automation-science-pack", "logistic-science-pack", "chemical-science-pack", "space-science-pack", "production-science-pack"}
 local production_space_science = {"automation-science-pack", "logistic-science-pack", "chemical-science-pack", "space-science-pack", "production-science-pack"}
 local military_space_science = {"automation-science-pack", "logistic-science-pack", "military-science-pack", "chemical-science-pack", "space-science-pack"}
@@ -147,7 +159,7 @@ utils.set_packs("rocketry", military_space_science, 500, 60)
 utils.set_packs("explosive-rocketry", military_space_science, 500, 60)
 utils.set_packs("automobilism", space_science, 500, 60)
 utils.set_packs("tank", military_space_science, 1000, 60)
-utils.set_packs("nuclear-power", space_science, 1000, 60)
+utils.set_packs("nuclear-power", space_science_or_before_muluna, 1000, 60)
 utils.set_packs("railway", production_science, 100, 30)
 utils.set_packs("automated-rail-transportation", production_science, 100, 30)
 utils.set_packs("fluid-wagon", production_science, 100, 30)
