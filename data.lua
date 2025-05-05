@@ -45,7 +45,8 @@ data:extend {{
     allow_recycling = false,
     allow_decomposition = false,
     allow_productivity = true,
-    localised_name = {"item-name.carbon-fiber"}
+    localised_name = {"item-name.carbon-fiber"},
+    auto_recycle = false,
 }}
 
 APS.add_planet {name = "maraxsis", filename = "__maraxsis-start__/maraxsis.lua", technology = "planet-discovery-maraxsis"}
