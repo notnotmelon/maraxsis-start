@@ -16,3 +16,21 @@ end
 data.raw.planet.maraxsis.asteroid_spawn_definitions, data.raw.planet.nauvis.asteroid_spawn_definitions = data.raw.planet.nauvis.asteroid_spawn_definitions, data.raw.planet.maraxsis.asteroid_spawn_definitions
 data.raw["space-connection"]["vulcanus-maraxsis"].asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_vulcanus)
 data.raw["space-connection"]["fulgora-maraxsis"].asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_fulgora)
+
+
+local sacrifice = table.deepcopy(data.raw.recipe["electromagnetic-plant"])
+table.insert(sacrifice.ingredients, {
+    type = "item",
+    name = "maraxsis-a-breath-of-fresh-air",
+    amount = 1,
+})
+sacrifice.name = sacrifice.name .. "-sacrifice"
+sacrifice.main_product = "electromagnetic-plant"
+sacrifice.category = "crafting"
+sacrifice.localised_name = {"entity-name.electromagnetic-plant"}
+data:extend{sacrifice}
+table.insert(data.raw.technology["electromagnetic-plant"].effects, 1, {
+    type = "unlock-recipe",
+    recipe = sacrifice.name
+})
+data.raw.recipe["electromagnetic-plant"].category = "electromagnetics"
