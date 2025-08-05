@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.18
+Date: 2025-08-05
+  Compatibility:
+    - Fixed crash-on-load with k2.
+  Bugfixes:
+    - Fixed fulgora softlock due to lube recipe & rocket fuel recipe. Resolves https://github.com/notnotmelon/maraxsis/issues/308
+---------------------------------------------------------------------------------------------------
 Version: 1.1.17
 Date: 2025-05-05
   Bugfixes:
