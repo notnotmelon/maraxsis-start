@@ -28,30 +28,17 @@ local function fix_duplicate_water_shaders(surface)
     end
 end
 
-local function create_inital_submarine(surface)
-    storage.submarine_x = (storage.submarine_x or 6) + 4
-
-    local submarine = surface.create_entity {
-        name = "maraxsis-diesel-submarine",
-        position = {x = storage.submarine_x, y = -14.5},
-        force = "player",
-        raise_built = true
-    }
-
-    local fuel_inventory = submarine.get_inventory(defines.inventory.fuel)
-    fuel_inventory.insert {name = "hydrogen-barrel", count = 80}
-end
-
 script.on_event(defines.events.on_player_created, function(event)
     if not remote.interfaces["freeplay"] then return end
     local player = game.get_player(event.player_index)
     local surface = player.surface
     if surface.name ~= "maraxsis" then return end
-    create_inital_submarine(surface)
     fix_non_collideable_cliffs(surface)
     fix_duplicate_water_shaders(surface)
     pcall(player.exit_cutscene)
-    player.insert {name = "light-armor"}
+    player.insert {name = "light-armor", count = 1}
+    player.insert {name = "maraxsis-diesel-submarine", count = 1}
+    player.insert {name = "hydrogen-barrel", count = 80}
 end)
 
 script.on_init(function()
