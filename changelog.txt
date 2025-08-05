@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.19
+Date: 2025-08-05
+  Bugfixes:
+    - Fixed medium asteroids appearing in orbit above maraxsis. Fixed big asteroids appearing in-route from vulcanus/fulgora to maraxsis.
+    - Fixed the trench not appearing in the "planets" tab in remote view.
+    - In multiplayer, making a new player grants 1 sub and 80 barrels of fuel.
+---------------------------------------------------------------------------------------------------
 Version: 1.1.18
 Date: 2025-08-05
   Compatibility:
