@@ -235,3 +235,9 @@ end
 data.raw.recipe["maraxsis-pressure-dome"].category = "maraxsis-hydro-plant-or-assembling"
 data.raw.recipe["biolubricant"].category = "maraxsis-hydro-plant-or-biochamber"
 data.raw.recipe["refined-concrete"].category = "pressing"
+
+table.insert(data.raw.technology["maraxsis-glassworking"].effects, 1, {
+    type = "unlock-space-location",
+    space_location = "maraxsis-trench",
+    use_icon_overlay_constant = true
+})
