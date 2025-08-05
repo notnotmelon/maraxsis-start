@@ -1,5 +1,7 @@
 local utils = require("__any-planet-start__.utils")
 
+local k2 = mods["Krastorio2-spaced-out"] or mods["Krastorio2"]
+
 utils.set_prerequisites("maraxsis-glassworking", nil)
 utils.set_prerequisites("foundry", {"maraxsis-glassworking"})
 utils.set_prerequisites("big-mining-drill", {"foundry", "planet-discovery-vulcanus", "electric-mining-drill"})
@@ -31,7 +33,7 @@ utils.set_prerequisites("fission-reactor-equipment", {"maraxsis-salt-reactor", "
 utils.set_prerequisites("rocket-fuel", {"oil-processing"})
 utils.set_prerequisites("railway", {"elevated-rail", "engine", "logistics-2"})
 utils.set_prerequisites("production-science-pack", {"productivity-module", "advanced-material-processing-2"})
-utils.set_prerequisites("maraxsis-deepsea-research", {"chemical-science-pack", "hydraulic-science-pack"})
+if not k2 then utils.set_prerequisites("maraxsis-deepsea-research", {"chemical-science-pack", "hydraulic-science-pack"}) end
 utils.set_prerequisites("maraxsis-sonar", {"radar"})
 utils.set_prerequisites("radar", {"hydraulic-science-pack"})
 utils.set_prerequisites("concrete", {"lubricant"})
@@ -42,7 +44,7 @@ utils.set_prerequisites("explosives", {"maraxsis-wyrm-confinement", "coal-liquef
 utils.set_prerequisites("military-2", {"coal-liquefaction", "military", "logistic-science-pack"})
 utils.set_prerequisites("cliff-explosives", {"military-2", "explosives", "fluid-handling"})
 
-if not mods["planet-muluna"] then 
+if not mods["planet-muluna"] then
     utils.set_prerequisites("automobilism", {"space-science-pack"})
     utils.set_prerequisites("nuclear-power", {"kovarex-enrichment-process"})
 else
@@ -167,7 +169,7 @@ utils.set_packs("processing-unit", logistic_science, 100, 30)
 utils.set_packs("radar", hydraulic_science, 100, 60)
 utils.set_packs("maraxsis-sonar", hydraulic_science, 100, 60)
 utils.set_packs("electric-engine", logistic_science, 100, 30)
-utils.set_packs("maraxsis-deepsea-research", hydraulic_science, 500, 60)
+if not k2 then utils.set_packs("maraxsis-deepsea-research", hydraulic_science, 500, 60) end
 utils.set_packs("cliff-explosives", logistic_science, 100, 30)
 utils.set_packs("maraxsis-wyrm-confinement", logistic_science, 100, 30)
 
