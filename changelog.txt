@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.21
+Date: 2025-08-06
+  Changes:
+    - Carbon fiber from jelly now always displays the "made-in" section. Resolves https://github.com/notnotmelon/maraxsis/issues/321
+---------------------------------------------------------------------------------------------------
 Version: 1.1.20
 Date: 2025-08-05
   Changes:
