@@ -45,6 +45,7 @@ data:extend {{
     allow_recycling = false,
     allow_decomposition = false,
     allow_productivity = true,
+    always_show_made_in = true,
     localised_name = {"item-name.carbon-fiber"},
     auto_recycle = false,
 }}
